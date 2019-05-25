@@ -2,6 +2,7 @@
 	echo "<br />Creating db now....";
 
 	// mysql://b31145a0578643:10c62e01@us-cdbr-iron-east-02.cleardb.net/heroku_5795f41579d14c9?reconnect=true
+   $dbhost="us-cdbr-iron-east-02.cleardb.net";
    $dbuser="b31145a0578643";
    $dbpass="10c62e01";
    $dbname="heroku_5795f41579d14c9";	
