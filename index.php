@@ -136,6 +136,7 @@
             '/auth',
            '/users',
 	   '/applications',
+	   '/admin',
          ], 
         'authenticator' => $authenticator
    ]));
