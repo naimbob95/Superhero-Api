@@ -31,11 +31,11 @@
 			) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1
 		EOSQL;  
 
-		$result = $db->exec($sql_create_contacts_tbl); 	
+		$result = $db->exec($sql_create_applications_tbl); 	
 		if($result !== false){
 			echo "<br/>Table application created....";
 		} else {
-		 	echo "<br/>Error creating table contacts!";
+		 	echo "<br/>Error creating table applications!";
 		}		
 
    }
