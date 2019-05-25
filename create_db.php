@@ -57,6 +57,7 @@
 			  mobileno varchar(15) NOT NULL,
 			  photo varchar(150) NOT NULL DEFAULT 'default.png',
 			  addeddate datetime NOT NULL,
+			  roles varchar(50) NOT NULL,
 			  PRIMARY KEY (id)
 			) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 		EOSQL;
@@ -78,7 +79,7 @@
    //*
    try {
 		$sql_insert_user_into_users = <<<EOSQL
-			INSERT INTO users (login, password, name, email, mobileno, photo, addeddate) VALUES ('admin', 'b42a6d93d7969152e0f18f0e41c0f4f2bc9625f06c43dcbc22f6ffb2ffdd6137d93c1cdbb16', 'admin', 'admin@gmail.com', '0123456789', 'default.png', NOW());
+			INSERT INTO users (login, password, name, email, mobileno, photo, addeddate,roles) VALUES ('admin', 'b42a6d93d7969152e0f18f0e41c0f4f2bc9625f06c43dcbc22f6ffb2ffdd6137d93c1cdbb16', 'admin', 'admin@gmail.com', '0123456789', 'default.png', NOW(),'admin');
 		EOSQL;
 
 		$result = $db->exec($sql_insert_user_into_users); 	
