@@ -1,11 +1,10 @@
 <?php
 	echo "<br />Creating db now....";
 
-	//mysql://b2c04d13ed6b4c:40729ffe@us-cdbr-iron-east-02.cleardb.net/heroku_b87ec2784b3ca40?reconnect=true
-   $dbhost="us-cdbr-iron-east-02.cleardb.net";
-   $dbuser="b2c04d13ed6b4c";
-   $dbpass="40729ffe";
-   $dbname="heroku_b87ec2784b3ca40";	
+	// mysql://b31145a0578643:10c62e01@us-cdbr-iron-east-02.cleardb.net/heroku_5795f41579d14c9?reconnect=true
+   $dbuser="b31145a0578643";
+   $dbpass="10c62e01";
+   $dbname="heroku_5795f41579d14c9";	
 
    $db = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
