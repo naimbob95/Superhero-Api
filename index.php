@@ -45,10 +45,10 @@
    //$jwtSecretKey = "jwt_secret_key";
 
    function getDatabase() {
-      $dbhost="127.0.0.1";
-      $dbuser="root";
-      $dbpass="";
-      $dbname="superhero";
+     $dbhost="us-cdbr-iron-east-02.cleardb.net";
+	$dbuser="b31145a0578643";
+	$dbpass="10c62e01"; 
+	$dbname="heroku_5795f41579d14c9";	
 
       $db = new Database($dbhost, $dbuser, $dbpass, $dbname);
       return $db;
@@ -134,6 +134,7 @@
             '/registration',
             '/checkemail',
             '/auth',
+           '/users',
          ], 
         'authenticator' => $authenticator
    ]));
