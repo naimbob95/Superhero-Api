@@ -135,6 +135,7 @@
             '/checkemail',
             '/auth',
            '/users',
+	   '/applications',
          ], 
         'authenticator' => $authenticator
    ]));
